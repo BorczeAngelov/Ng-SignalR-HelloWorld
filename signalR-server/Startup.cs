@@ -48,11 +48,7 @@ namespace signalR_server
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-
-                endpoints.MapGet("/", async context =>
-                {
-                    await context.Response.WriteAsync("Hello World! This is server!");
-                });
+                endpoints.MapHub<Hubs.HelloWorldHub>("/hello");
             });
         }
     }
