@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/signalR-server/obj
+/signalR-server/bin/Debug/net5.0
+/signalR-server/.vs/signalR-server
