@@ -9,13 +9,11 @@ import { SignalRService } from './services/signal-r.service';
 export class AppComponent implements OnInit {
   title = 'ng-client';
 
-  constructor(private signalRService: SignalRService) { }
+  constructor(public signalRService: SignalRService) { }
 
 
   ngOnInit(): void {
     console.log("OnInit from AppComponent");
-
-    this.signalRService.ngOnInit();
-    
+    this.signalRService.ngOnInit();    
   }
 }
